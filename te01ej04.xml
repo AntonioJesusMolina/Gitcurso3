@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<empresa name="ONERP">
+    <datos_de_empresa>
+        <CIF>BXXXXXXXX</CIF>
+        <direccion>
+            <via>Por indicar 10</via>
+            <cod_postal>46002</cod_postal>
+            <localidad>Valencia</localidad>
+            <provincia>Valencia</provincia>
+            <telefono></telefono>
+        </direccion>
+    </datos_de_empresa>
+    <factura id="00003">
+        <fecha>12/08/2015</fecha>
+        <cliente id="430000006">
+            <nombre>Maria Grau Alonso</nombre>
+            <dni>21212121H</dni>
+            <direccion>
+                <via>CA Los alamos, 230</via>
+                <cod_postal>28001</cod_postal>
+                <localidad>Madrid</localidad>
+                <provincia>Madrid</provincia>
+                <telefono num="666111666"/>
+            </direccion>
+        </cliente>
+        <articulos>
+            <articulo id="1" name="SORTIJA"iva="21">
+                <denominacion>Sortija Cuarzo</denominacion>
+                <cantidad>12</cantidad>
+                <precio>230</precio>
+                <descuento>0</descuento>
+                <importe>2760</importe>
+            </articulo>
+            <articulo id="2" name="PULSERA 24K" iva="21">
+                <denominacion>Pulsera oro 24K</denominacion>
+                <cantidad>5</cantidad>
+                <precio>20</precio>
+                <descuento>0</descuento>
+                <importe>100</importe>
+            </articulo>
+            <articulo id="3" name="CORBATA C100" iva="21">
+                <denominacion>Corbata a rayas</denominacion>
+                <cantidad>6</cantidad>    
+                <precio>55</precio>
+                <descuento>0</descuento>
+                <importe>330</importe>
+            </articulo>
+            <articulo id="4" name="RELOJ ESFERA" iva="21">
+                <denominacion>Reloj Esfera</denominacion>
+                <cantidad>3</cantidad>    
+                <precio>130</precio>
+                <descuento>0</descuento>
+                <importe>390</importe>
+            </articulo>
+        </articulos>
+        <importetotal>
+            <baseimponible>3.580</baseimponible>
+            <iva>21</iva>
+            <cuotaiva>751,80</cuotaiva>
+            <total>4331,80</total>
+        </importetotal>
+        <formadepago descripcion="Giro a 30,60 y 90 dias">
+            <cuota>11/09/2015--1443,79 GIRO</cuota>
+            <cuota>11/10/2015--1443,79 GIRO</cuota>
+            <cuota>11/11/2015--1444,22 GIRO</cuota>
+        </formadepago>
+    </factura>
+</empresa>
+<!--Creo que es mejor desglosarlo de esta forma, por que queda todo mas claro, se hace un importe de cada producto
+y se incluye en como etiqueta al final de cada articulo. Despues hacemos en la etiqueta importe total desglosado a el precio sin iva
+mas el iva total de todos los productos-->
